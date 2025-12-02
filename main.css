@@ -1,3 +1,11 @@
+/* ===================
+    CSS Variables
+====================*/
+:root {
+    --color-primary: #EF5DA8;
+    --color-text: #393F48;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
