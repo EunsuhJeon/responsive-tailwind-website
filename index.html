@@ -15,6 +15,7 @@
 </head>
 <body>
     <!-- you ------------------------------------------------------------>
+    <!--
     <header>
         <img src="./assets/logos/logo.png" alt="logo">
         <h1>It's me</h1>
@@ -31,6 +32,38 @@
             <a href="#"><i class="fi fi-brands-tik-tok"></i></a>
             <a href="#"><i class="fi fi-brands-youtube"></i></a>
             <a href="#">Download CV</a>
+        </div>
+    </header>-->
+    <header class="flex items-center justify-between py-4 h-20">
+        <!-- float left item -->
+        <div class="flex items-center gap-11 h-full">
+            <!-- logo, title -->
+            <div class="flex items-center gap-4 h-full">
+                <img src="./assets/logos/logo.png" alt="logo" class="h-[90%] w-auto">
+                <h1 class="font-medium text-[1.1rem]">It's me</h1>
+            </div>
+            
+            <!-- nav -->
+            <nav class="hidden md:flex gap-6 font-light text-[0.9rem]">
+                <a href="#" class="hover:text-gray-500">Home</a>
+                <a href="#" class="hover:text-gray-500">About</a>
+                <a href="#" class="hover:text-gray-500">Contact</a>
+            </nav>
+        </div>
+
+        <!-- float right item -->
+        <div class="flex items-center gap-6">
+            <div class="flex items-center gap-6 hidden lg:flex">
+                <a href="#" class="text-xl hover:text-gray-600"><i class="fi fi-brands-github"></i></a>
+                <a href="#" class="text-xl hover:text-pink-500"><i class="fi fi-brands-instagram"></i></a>
+                <a href="#" class="text-xl hover:text-red-500"><i class="fi fi-brands-tik-tok"></i></a>
+                <a href="#" class="text-xl hover:text-red-600"><i class="fi fi-brands-youtube"></i></a>
+            </div>
+            <a href="#" class="px-5 py-2 border border-[var(--color-primary)] rounded-3xl text-[0.9rem] font-light">Download CV</a>
+            <input type="checkbox" id="menu-toggle" class="hidden"/>
+            <label for="menu-toggle" class="md:hidden">
+                <i class="fi fi-rr-menu-burger"></i>
+            </label>
         </div>
     </header>
     <main>
