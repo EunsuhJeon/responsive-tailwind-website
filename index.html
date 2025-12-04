@@ -16,7 +16,7 @@
 <body>
     <!-- you ------------------------------------------------------------>
     <header class="flex items-center justify-between py-4 h-20">
-        <!-- float left item -->
+        <!-- left item -->
         <div class="flex items-center gap-11 h-full">
             <!-- logo, title -->
             <div class="flex items-center gap-4 h-full">
@@ -31,7 +31,7 @@
                 <a href="#" class="hover:text-gray-500">Contact</a>
             </nav>
         </div>
-        <!-- float right item -->
+        <!-- right item -->
         <div class="flex items-center gap-6">
             <!-- social media -->
             <div class="flex items-center gap-6 hidden 
@@ -63,7 +63,7 @@
                 </h2>
                 <div class="grid gap-8 text-[1rem] font-light grid-cols-[auto_1fr] grid-rows-[auto_auto]                 
                             md:grid-cols-[1.2fr_1fr] md:grid-rows-[1fr_1fr] 
-                            lg:grid-cols-1 lg:grid-rows-[auto_auto] lg:w-[30%] lg:px-4">
+                            lg:grid-cols-1 lg:grid-rows-[auto_auto] lg:w-[30%] lg:px-4 lg:self-end lg:py-4">
                     <!-- hero desc -->
                     <p class="col-span-2 
                                 md:col-span-1 md:col-start-1 md:row-start-1 
@@ -81,16 +81,22 @@
                         <a href="#" class="text-xl hover:text-red-500"><i class="fi fi-brands-tik-tok"></i></a>
                         <a href="#" class="text-xl hover:text-red-600"><i class="fi fi-brands-youtube"></i></a>
                     </div>
-
                 </div>
             </div>
             <!-- contents (with thumbnail) -->
-            <div class="w-full grid gap-4 grid-cols-[1fr]
+            <div class="w-full grid gap-8 grid-cols-[1fr]
                         md:grid-cols-[repeat(2,1fr)]
                         lg:grid-cols-[repeat(3,1fr)]">
+                <!-- content item 1 -->
                 <div class="p-4 border border-dashed border-[#e5e5e5] rounded-[25px]">
-                    <div>
+                    <div class="relative">
                         <img src="./assets/images/thumbnail-bookies.png" alt="thumbnail-bookies">
+                        <div class="absolute flex top-[0.3rem] right-[0.3rem] gap-[0.3rem]">
+                            <img src="./assets/icons/flutter.png" alt="flutter"
+                                class="w-[2rem] h-[2rem]">
+                            <img src="./assets/icons/tailwind.png" alt="tailwind"
+                                class="w-[2rem] h-[2rem]">
+                        </div>
                     </div>
                     <div class="p-4 flex justify-between">
                         <div>
@@ -117,9 +123,16 @@
                         </div>
                     </div>
                 </div>
+                <!-- content item 2 -->
                 <div class="p-4 border border-dashed border-[#e5e5e5] rounded-[25px]">
-                    <div>
+                    <div class="relative">
                         <img src="./assets/images/thumbnail-bwalet.png" alt="thumbnail-bwalet">
+                        <div class="absolute flex top-[0.3rem] right-[0.3rem] gap-[0.3rem]">
+                            <img src="./assets/icons/bootstrap.png" alt="bootstrap"
+                                class="w-[2rem] h-[2rem]">
+                            <img src="./assets/icons/android-studio.png" alt="android-studio"
+                                class="w-[2rem] h-[2rem]">
+                        </div>
                     </div>
                     <div class="p-4 flex justify-between">
                         <div>
@@ -146,9 +159,16 @@
                         </div>
                     </div>
                 </div>
+                <!-- content item 3 -->
                 <div class="p-4 border border-dashed border-[#e5e5e5] rounded-[25px]">
-                    <div>
+                    <div class="relative">
                         <img src="./assets/images/thumbnail-gojek.png" alt="thumbnail-gojek">
+                        <div class="absolute flex top-[0.3rem] right-[0.3rem] gap-[0.3rem]">
+                            <img src="./assets/icons/flutter.png" alt="flutter"
+                                class="w-[2rem] h-[2rem]">
+                            <img src="./assets/icons/android-studio.png" alt="android-studio"
+                                class="w-[2rem] h-[2rem]">
+                        </div>
                     </div>
                     <div class="p-4 flex justify-between">
                         <div>
@@ -175,10 +195,17 @@
                         </div>
                     </div>
                 </div>
+                <!-- content item 4 -->
                 <div class="hidden p-4 border border-dashed border-[#e5e5e5] rounded-[25px]
                             md:block">
-                    <div>
+                    <div class="relative">
                         <img src="./assets/images/thumbnail-bookies2.png" alt="thumbnail-bookies2">
+                        <div class="absolute flex top-[0.3rem] right-[0.3rem] gap-[0.3rem]">
+                            <img src="./assets/icons/flutter.png" alt="flutter"
+                                class="w-[2rem] h-[2rem]">
+                            <img src="./assets/icons/tailwind.png" alt="tailwind"
+                                class="w-[2rem] h-[2rem]">
+                        </div>
                     </div>
                     <div class="p-4 flex justify-between">
                         <div>
@@ -205,10 +232,17 @@
                         </div>
                     </div>
                 </div>
+                <!-- content item 5 -->
                 <div class="hidden p-4 border border-dashed border-[#e5e5e5] rounded-[25px]
                             lg:block">
-                    <div>
+                    <div class="relative">
                         <img src="./assets/images/thumbnail-bwalet2.png" alt="thumbnail-bwalet2">
+                        <div class="absolute flex top-[0.3rem] right-[0.3rem] gap-[0.3rem]">
+                            <img src="./assets/icons/bootstrap.png" alt="bootstrap"
+                                class="w-[2rem] h-[2rem]">
+                            <img src="./assets/icons/android-studio.png" alt="android-studio"
+                                class="w-[2rem] h-[2rem]">
+                        </div>
                     </div>
                     <div class="p-4 flex justify-between">
                         <div>
@@ -235,10 +269,17 @@
                         </div>
                     </div>
                 </div>
+                <!-- content item 6 -->
                 <div class="hidden p-4 border border-dashed border-[#e5e5e5] rounded-[25px]
                             lg:block">
-                    <div>
+                    <div class="relative">
                         <img src="./assets/images/thumbnail-gojek2.png" alt="thumbnail-gojek2">
+                        <div class="absolute flex top-[0.3rem] right-[0.3rem] gap-[0.3rem]">
+                            <img src="./assets/icons/flutter.png" alt="flutter"
+                                class="w-[2rem] h-[2rem]">
+                            <img src="./assets/icons/android-studio.png" alt="android-studio"
+                                class="w-[2rem] h-[2rem]">
+                        </div>
                     </div>
                     <div class="p-4 flex justify-between">
                         <div>
