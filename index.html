@@ -51,8 +51,9 @@
         </div>
     </header>
     <main>
-        <section class="flex flex-col">
-            <div class="w-full flex flex-col gap-8 lg:flex-row lg:items-center justify-between py-12">
+        <section class="flex flex-col gap-12">
+            <!-- hero -->
+            <div class="w-full flex flex-col gap-8 lg:flex-row lg:items-center justify-between">
                 <!-- hero title -->
                 <h2 class="text-[2rem] text-[clamp(2rem,9vw,3.7rem)] font-light
                             md:text-[3.7rem]">
@@ -60,10 +61,10 @@
                     to code <i class="fi fi-tr-diagram-subtask text-[var(--color-primary)] text-[80%]"></i><br>
                     an application
                 </h2>
-                <div class="grid gap-8 text-[1rem] font-light grid-cols-[auto_auto] grid-rows-[auto_auto]                 
+                <div class="grid gap-8 text-[1rem] font-light grid-cols-[auto_1fr] grid-rows-[auto_auto]                 
                             md:grid-cols-[1.2fr_1fr] md:grid-rows-[1fr_1fr] 
                             lg:grid-cols-1 lg:grid-rows-[auto_auto] lg:w-[30%] lg:px-4">
-                    <!-- hero desd -->
+                    <!-- hero desc -->
                     <p class="col-span-2 
                                 md:col-span-1 md:col-start-1 md:row-start-1 
                                 lg:col-start-1 lg:row-start-1">with me <span class="text-[var(--color-primary)]">arif iskandar</span>, a software developer who loves to share how to code in many programing languages and multi platforms.</p>
@@ -83,63 +84,90 @@
 
                 </div>
             </div>
-            <div class="w-full">
-                <div>
+            <!-- contents (with thumbnail) -->
+            <div class="w-full grid gap-4 grid-cols-[1fr]
+                        md:grid-cols-[repeat(2,1fr)]
+                        lg:grid-cols-[repeat(3,1fr)]">
+                <div class="p-4 border border-dashed border-[#e5e5e5] rounded-[25px]">
                     <div>
                         <img src="./assets/images/thumbnail-bookies.png" alt="thumbnail-bookies">
                     </div>
-                    <div>
-                        <h3>Bookies</h3>
-                        <p>Read digital book app</p>
+                    <div class="p-4 flex justify-between">
+                        <div>
+                            <h3 class="text-[clamp(1.125rem,6vw,1.5rem)]
+                                        md:text-[1.5rem]">Bookies</h3>
+                            <p class="text-[0.875rem]">Read digital book app</p>
+                        </div>
+                        <div class="border border-[#e5e5e5] border-solid">
+
+                        </div>
                     </div>
                 </div>
-                <div>
+                <div class="p-4 border border-dashed border-[#e5e5e5] rounded-[25px]">
                     <div>
                         <img src="./assets/images/thumbnail-bwalet.png" alt="thumbnail-bwalet">
                     </div>
-                    <div>
-                        <h3>BWalet</h3>
-                        <p>Business wallet</p>
+                    <div class="p-4 flex justify-between">
+                        <div>
+                            <h3 class="text-[clamp(1.125rem,6vw,1.5rem)]
+                                        md:text-[1.5rem]">BWalet</h3>
+                            <p>Business wallet</p>
+                            </div>
                     </div>
                 </div>
-                <div>
+                <div class="p-4 border border-dashed border-[#e5e5e5] rounded-[25px]">
                     <div>
                         <img src="./assets/images/thumbnail-gojek.png" alt="thumbnail-gojek">
                     </div>
-                    <div>
-                        <h3>Gojek</h3>
-                        <p>Home screen gojek apps</p>
+                    <div class="p-4 flex justify-between">
+                        <div>
+                            <h3 class="text-[clamp(1.125rem,6vw,1.5rem)]
+                                        md:text-[1.5rem]">Gojek</h3>
+                            <p>Home screen gojek apps</p>
+                        </div>
                     </div>
                 </div>
-                <div>
+                <div class="hidden p-4 border border-dashed border-[#e5e5e5] rounded-[25px]
+                            md:block">
                     <div>
                         <img src="./assets/images/thumbnail-bookies2.png" alt="thumbnail-bookies2">
                     </div>
-                    <div>
-                        <h3>Bookies</h3>
-                        <p>Read digital book app</p>
+                    <div class="p-4 flex justify-between">
+                        <div>
+                            <h3 class="text-[clamp(1.125rem,6vw,1.5rem)]
+                                        md:text-[1.5rem]">Bookies</h3>
+                            <p>Read digital book app</p>
+                        </div>
                     </div>
                 </div>
-                <div>
+                <div class="hidden p-4 border border-dashed border-[#e5e5e5] rounded-[25px]
+                            lg:block">
                     <div>
                         <img src="./assets/images/thumbnail-bwalet2.png" alt="thumbnail-bwalet2">
                     </div>
-                    <div>
-                        <h3>BWalet</h3>
-                        <p>Business wallet</p>
+                    <div class="p-4 flex justify-between">
+                        <div>
+                            <h3 class="text-[clamp(1.125rem,6vw,1.5rem)]
+                                        md:text-[1.5rem]">BWalet</h3>
+                            <p>Business wallet</p>
+                        </div>
                     </div>
                 </div>
-                <div>
+                <div class="hidden p-4 border border-dashed border-[#e5e5e5] rounded-[25px]
+                            lg:block">
                     <div>
                         <img src="./assets/images/thumbnail-gojek2.png" alt="thumbnail-gojek2">
                     </div>
-                    <div>
-                        <h3>Gojek</h3>
-                        <p>Home screen gojek apps</p>
+                    <div class="p-4 flex justify-between">
+                        <div>
+                            <h3 class="text-[clamp(1.125rem,6vw,1.5rem)]
+                                        md:text-[1.5rem]">Gojek</h3>
+                            <p>Home screen gojek apps</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="#">Load more</a>
+            <a href="#" class="self-center px-5 py-2 border border-[var(--color-primary)] rounded-3xl text-[0.9rem] font-light">Load more</a>
         </section>
 <!-- mee------------------------------------------------------------------ -->
     <section>

@@ -49,6 +49,13 @@ a{
 }
 
 /*Jade - start*/
+/* Prevent horizontal scroll for mobile */
+html, 
+body{ 
+    overflow-x:hidden; 
+    width:100%; 
+}
+
 /* =============================
     Header
 ==============================*/
