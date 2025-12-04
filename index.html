@@ -48,6 +48,9 @@
             <label for="menu-toggle" class="md:hidden z-[90]">
                 <i class="fi fi-rr-menu-burger"></i>
             </label>
+            <!-- ============================
+                navigation (mobile only)
+            ============================ -->
             <!-- background dark (overlay) -->
             <div class="hidden peer-checked:block fixed top-0 left-0 w-full h-full bg-black/30 z-[80]
                         md:peer-checked:hidden"></div>
@@ -73,7 +76,12 @@
     <main>
         <section class="flex flex-col gap-12 py-16">
             <!-- hero -->
-            <div class="w-full flex flex-col gap-8 lg:flex-row lg:items-center justify-between">
+            <div class="w-full flex flex-col gap-8 lg:flex-row lg:items-center justify-between relative">
+                <!-- background image -->
+                <img src="./assets/images/ellipse.png" alt="background image"
+                    class="absolute top-0 right-[-1.3rem] h-full
+                            md:right-[-3.5rem]
+                            lg:hidden">
                 <!-- hero title -->
                 <h2 class="text-[2rem] text-[clamp(2rem,9vw,3.7rem)] font-light
                             md:text-[3.7rem]">
