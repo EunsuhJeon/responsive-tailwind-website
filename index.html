@@ -44,10 +44,30 @@
             <!-- download cv button -->
             <a href="#" class="px-5 py-2 border border-[var(--color-primary)] rounded-3xl text-[0.9rem] font-light">Download CV</a>
             <!-- hamburger menu -->
-            <input type="checkbox" id="menu-toggle" class="hidden"/>
-            <label for="menu-toggle" class="md:hidden">
+            <input type="checkbox" id="menu-toggle" class="peer hidden"/>
+            <label for="menu-toggle" class="md:hidden z-[90]">
                 <i class="fi fi-rr-menu-burger"></i>
             </label>
+            <!-- background dark (overlay) -->
+            <div class="hidden peer-checked:block fixed top-0 left-0 w-full h-full bg-black/30 z-[80]
+                        md:peer-checked:hidden"></div>
+            <!-- mobile navigation -->
+            <nav class="hidden peer-checked:flex
+                        flex-col justify-between gap-8 fixed top-0 left-0 bg-white w-[80%] h-[47rem] z-[100] py-20 px-0 items-center
+                        gap-6 font-light text-[0.9rem]
+                        md:hidden md:peer-checked:hidden">
+                <div class="flex flex-col items-center gap-8">
+                    <div class="flex items-center gap-4">
+                        <img src="./assets/logos/logo.png" alt="logo" class="h-[1.7rem] w-auto">
+                        <h1 class="font-medium text-[1.1rem]">It's me</h1>
+                    </div>
+                    <a href="#" class="hover:text-gray-500">Home</a>
+                    <a href="#" class="hover:text-gray-500">About</a>
+                    <a href="#" class="hover:text-gray-500">Contact</a>
+                </div>
+                <!-- download cv button -->
+                <a href="#" class="px-5 py-2 bg-[var(--color-primary)] rounded-3xl text-[0.9rem] text-white font-light">Download CV</a>
+            </nav>
         </div>
     </header>
     <main>
