@@ -20,9 +20,6 @@ Arif Iskandar: [Belajar Responsive Website Next Js dan Tailwind CSS](figma.com/c
 ## Development Team
 | Name      | Assigned Part           | Key Roles & Features                                                                 |
 |-----------|------------------------|------------------------------------------------------------------------------------|
-| Jade    | Header, Top of Main     | - Recreated mockup layout using **Tailwind only**, no native CSS  
-- Ensured **responsive design** for mobile, tablet, and desktop, adapting to all screen ratios  
-- Applied **Tailwind-based transitions and animations**  
-- Implemented **different element positioning and display behavior** across mobile, tablet, and desktop |
+| Jade    | Header, Top of Main     | - Recreated mockup layout using **Tailwind only**, no native CSS<br>- Ensured **responsive design** for mobile, tablet, and desktop, adapting to all screen ratios<br>- Applied **Tailwind-based transitions and animations**<br>- Implemented **different element positioning and display behavior** across mobile, tablet, and desktop |
 | Jose    | Bottom of Main, Footer  | -                 |
 
