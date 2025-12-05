@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,345 +8,273 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Flaticon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css">
 </head>
-<body class="overflow-x-hidden w-full h-full py-0 px-[1.3rem] text-[var(--color-text)] font-[Poppins]
-            md:px-[3.5rem]
-            lg:px-[5rem]">
-    <!-- you ------------------------------------------------------------>
-    <header class="flex items-center justify-between py-4 h-20">
-        <!-- left item -->
-        <div class="flex items-center gap-11 h-full">
-            <!-- logo, title -->
-            <div class="flex items-center gap-4 h-full">
-                <img src="./assets/logos/logo.png" alt="logo" class="h-[80%] w-auto md:h-[90%]">
-                <h1 class="font-medium text-[1.1rem]">It's me</h1>
-            </div>
-            <!-- nav -->
-            <nav class="hidden gap-6 font-light text-[0.9rem]
+
+<body class="text-[var(--colo-text)] font-[Poppins]">
+    <!-- CONTENEDOR GLOBAL -->
+    <div class="max-w-xl lg:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
+
+        <!-- you ------------------------------------------------------------>
+        <header class="flex items-center justify-between py-4 h-20">
+            <!-- float left item -->
+            <div class="flex items-center gap-11 h-full">
+                <!-- logo, title -->
+                <div class="flex items-center gap-4 h-full">
+                    <img src="./assets/logos/logo.png" alt="logo" class="h-[80%] w-auto md:h-[90%]">
+                    <h1 class="font-medium text-[1.1rem]">It's me</h1>
+                </div>
+                <!-- nav -->
+                <nav class="hidden gap-6 font-light text-[0.9rem]
                         md:flex">
-                <a href="#" class="hover:text-gray-500">Home</a>
-                <a href="#" class="hover:text-gray-500">About</a>
-                <a href="#" class="hover:text-gray-500">Contact</a>
-            </nav>
-        </div>
-        <!-- right item -->
-        <div class="flex items-center gap-6">
-            <!-- social media -->
-            <div class="flex items-center gap-6 hidden 
-                        lg:flex">
-                <a href="#" class="text-xl hover:text-gray-600"><i class="fi fi-brands-github"></i></a>
-                <a href="#" class="text-xl hover:text-pink-500"><i class="fi fi-brands-instagram"></i></a>
-                <a href="#" class="text-xl hover:text-red-500"><i class="fi fi-brands-tik-tok"></i></a>
-                <a href="#" class="text-xl hover:text-red-600"><i class="fi fi-brands-youtube"></i></a>
-            </div>
-            <!-- download cv button -->
-            <a href="#" class="px-5 py-2 border border-[var(--color-primary)] rounded-3xl text-[0.9rem] font-light">Download CV</a>
-            <!-- hamburger menu -->
-            <input type="checkbox" id="menu-toggle" class="peer hidden"/>
-            <label for="menu-toggle" class="md:hidden z-[90]">
-                <i class="fi fi-rr-menu-burger"></i>
-            </label>
-            <!-- ============================
-                navigation (mobile only)
-            ============================ -->
-            <!-- background dark (overlay) -->
-            <div class="hidden peer-checked:block fixed top-0 left-0 w-full h-full bg-black/30 z-[80]
-                        md:peer-checked:hidden"></div>
-            <!-- mobile navigation -->
-            <nav class="hidden peer-checked:flex
-                        flex-col justify-between gap-8 fixed top-0 left-0 bg-white w-[80%] h-[47rem] z-[100] py-20 px-0 items-center
-                        gap-6 font-light text-[0.9rem]
-                        md:hidden md:peer-checked:hidden">
-                <div class="flex flex-col items-center gap-8">
-                    <div class="flex items-center gap-4">
-                        <img src="./assets/logos/logo.png" alt="logo" class="h-[1.7rem] w-auto">
-                        <h1 class="font-medium text-[1.1rem]">It's me</h1>
-                    </div>
                     <a href="#" class="hover:text-gray-500">Home</a>
                     <a href="#" class="hover:text-gray-500">About</a>
                     <a href="#" class="hover:text-gray-500">Contact</a>
+                </nav>
+            </div>
+            <!-- float right item -->
+            <div class="flex items-center gap-6">
+                <!-- social media -->
+                <div class="flex items-center gap-6 hidden 
+                        lg:flex">
+                    <a href="#" class="text-xl hover:text-gray-600"><i class="fi fi-brands-github"></i></a>
+                    <a href="#" class="text-xl hover:text-pink-500"><i class="fi fi-brands-instagram"></i></a>
+                    <a href="#" class="text-xl hover:text-red-500"><i class="fi fi-brands-tik-tok"></i></a>
+                    <a href="#" class="text-xl hover:text-red-600"><i class="fi fi-brands-youtube"></i></a>
                 </div>
                 <!-- download cv button -->
-                <a href="#" class="px-5 py-2 bg-[var(--color-primary)] rounded-3xl text-[0.9rem] text-white font-light">Download CV</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="flex flex-col gap-12 py-16">
-            <!-- hero -->
-            <div class="w-full flex flex-col gap-8 lg:flex-row lg:items-center justify-between relative">
-                <!-- background image -->
-                <img src="./assets/images/ellipse.png" alt="background image"
-                    class="absolute top-0 right-[-1.3rem] h-full
-                            md:right-[-3.5rem]
-                            lg:hidden">
-                <!-- hero title -->
-                <h2 class="text-[2rem] text-[clamp(2rem,9vw,3.7rem)] font-light
+                <a href="#"
+                    class="px-5 py-2 border border-[var(--color-primary)] rounded-3xl text-[0.9rem] font-light">Download
+                    CV</a>
+                <!-- hamburger menu -->
+                <input type="checkbox" id="menu-toggle" class="hidden" />
+                <label for="menu-toggle" class="md:hidden">
+                    <i class="fi fi-rr-menu-burger"></i>
+                </label>
+            </div>
+        </header>
+        <main>
+            <section class="flex flex-col gap-12">
+                <!-- hero -->
+                <div class="w-full flex flex-col gap-8 lg:flex-row lg:items-center justify-between">
+                    <!-- hero title -->
+                    <h2 class="text-[2rem] text-[clamp(2rem,9vw,3.7rem)] font-light
                             md:text-[3.7rem]">
-                    Let's learn <i class="fi fi-ts-book-alt text-[#9b51e0] text-[80%]"></i><br> 
-                    to code <i class="fi fi-tr-diagram-subtask text-[var(--color-primary)] text-[80%]"></i><br>
-                    an application
-                </h2>
-                <div class="grid gap-8 text-[1rem] font-light grid-cols-[auto_1fr] grid-rows-[auto_auto]                 
+                        Let's learn <i class="fi fi-ts-book-alt text-[#9b51e0] text-[80%]"></i><br>
+                        to code <i class="fi fi-tr-diagram-subtask text-[var(--color-primary)] text-[80%]"></i><br>
+                        an application
+                    </h2>
+                    <div class="grid gap-8 text-[1rem] font-light grid-cols-[auto_1fr] grid-rows-[auto_auto]                 
                             md:grid-cols-[1.2fr_1fr] md:grid-rows-[1fr_1fr] 
-                            lg:grid-cols-1 lg:grid-rows-[auto_auto] lg:w-[30%] lg:px-4 lg:self-end lg:py-4">
-                    <!-- hero desc -->
-                    <p class="col-span-2 
+                            lg:grid-cols-1 lg:grid-rows-[auto_auto] lg:w-[30%] lg:px-4">
+                        <!-- hero desc -->
+                        <p class="col-span-2 
                                 md:col-span-1 md:col-start-1 md:row-start-1 
-                                lg:col-start-1 lg:row-start-1">with me <span class="text-[var(--color-primary)]">arif iskandar</span>, a software developer who loves to share how to code in many programing languages and multi platforms.</p>
-                    <!-- hero button -->
-                    <a href="#" class="justify-self-start col-span-1 self-start px-8 py-2 bg-[var(--color-primary)] rounded-3xl text-[0.9rem] text-white
+                                lg:col-start-1 lg:row-start-1">with me <span class="text-[var(--color-primary)]">arif
+                                iskandar</span>, a software developer who loves to share how to code in many programing
+                            languages and multi platforms.</p>
+                        <!-- hero button -->
+                        <a href="#" class="justify-self-start col-span-1 self-start px-8 py-2 bg-[var(--color-primary)] rounded-3xl text-[0.9rem] text-white
                                 md:col-start-1 md:row-start-2 
                                 lg:col-start-1 lg:row-start-2">Start learn</a>
-                    <!-- social media -->
-                    <div class="flex gap-4 col-span-1 md:col-start-2 self-center
+                        <!-- social media -->
+                        <div class="flex gap-4 col-span-1 md:col-start-2 self-center
                                 md:row-start-1 md:row-span-2 md:flex-col md:justify-self-end
                                 lg:hidden">
-                        <a href="#" class="text-xl hover:text-gray-600"><i class="fi fi-brands-github"></i></a>
-                        <a href="#" class="text-xl hover:text-pink-500"><i class="fi fi-brands-instagram"></i></a>
-                        <a href="#" class="text-xl hover:text-red-500"><i class="fi fi-brands-tik-tok"></i></a>
-                        <a href="#" class="text-xl hover:text-red-600"><i class="fi fi-brands-youtube"></i></a>
+                            <a href="#" class="text-xl hover:text-gray-600"><i class="fi fi-brands-github"></i></a>
+                            <a href="#" class="text-xl hover:text-pink-500"><i class="fi fi-brands-instagram"></i></a>
+                            <a href="#" class="text-xl hover:text-red-500"><i class="fi fi-brands-tik-tok"></i></a>
+                            <a href="#" class="text-xl hover:text-red-600"><i class="fi fi-brands-youtube"></i></a>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-            <!-- contents (with thumbnail) -->
-            <div class="w-full grid gap-8 grid-cols-[1fr]
+                <!-- contents (with thumbnail) -->
+                <div class="w-full grid gap-4 grid-cols-[1fr]
                         md:grid-cols-[repeat(2,1fr)]
                         lg:grid-cols-[repeat(3,1fr)]">
-                <!-- content item 1 -->
-                <div class="p-4 border border-dashed border-[#e5e5e5] rounded-[25px]">
-                    <div class="relative">
-                        <img src="./assets/images/thumbnail-bookies.png" alt="thumbnail-bookies">
-                        <div class="absolute flex top-[0.3rem] right-[0.3rem] gap-[0.3rem]">
-                            <img src="./assets/icons/flutter.png" alt="flutter"
-                                class="w-[2rem] h-[2rem]">
-                            <img src="./assets/icons/tailwind.png" alt="tailwind"
-                                class="w-[2rem] h-[2rem]">
-                        </div>
-                    </div>
-                    <div class="p-4 flex justify-between">
+                    <div class="p-4 border border-dashed border-[#e5e5e5] rounded-[25px]">
                         <div>
-                            <h3 class="text-[clamp(1.125rem,5.2vw,1.5rem)]
+                            <img src="./assets/images/thumbnail-bookies.png" alt="thumbnail-bookies">
+                        </div>
+                        <div class="p-4 flex justify-between">
+                            <div>
+                                <h3 class="text-[clamp(1.125rem,6vw,1.5rem)]
                                         md:text-[1.5rem]">Bookies</h3>
-                            <p class="text-[0.875rem]">Read digital book app</p>
-                        </div>
-                        <div class="relative flex items-center">
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-10 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                                <img src="./assets/images/profile1.png" alt="profile1" class="w-full h-full object-cover block">
+                                <p class="text-[0.875rem]">Read digital book app</p>
                             </div>
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-20 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                                <img src="./assets/images/profile2.png" alt="profile2" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-30 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                               <img src="./assets/images/profile3.png" alt="profile3" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="flex justify-center items-center text-base border border-solid border-[3px] border-white bg-[var(--color-text)] rounded-full z-40 w-[2.8rem] h-[2.8rem]">
-                                <span class="text-white">+99</span>
+                            <div class="border border-[#e5e5e5] border-solid">
+
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- content item 2 -->
-                <div class="p-4 border border-dashed border-[#e5e5e5] rounded-[25px]">
-                    <div class="relative">
-                        <img src="./assets/images/thumbnail-bwalet.png" alt="thumbnail-bwalet">
-                        <div class="absolute flex top-[0.3rem] right-[0.3rem] gap-[0.3rem]">
-                            <img src="./assets/icons/bootstrap.png" alt="bootstrap"
-                                class="w-[2rem] h-[2rem]">
-                            <img src="./assets/icons/android-studio.png" alt="android-studio"
-                                class="w-[2rem] h-[2rem]">
-                        </div>
-                    </div>
-                    <div class="p-4 flex justify-between">
+                    <div class="p-4 border border-dashed border-[#e5e5e5] rounded-[25px]">
                         <div>
-                            <h3 class="text-[clamp(1.125rem,5.2vw,1.5rem)]
+                            <img src="./assets/images/thumbnail-bwalet.png" alt="thumbnail-bwalet">
+                        </div>
+                        <div class="p-4 flex justify-between">
+                            <div>
+                                <h3 class="text-[clamp(1.125rem,6vw,1.5rem)]
                                         md:text-[1.5rem]">BWalet</h3>
-                            <p class="text-[0.875rem]">Business wallet</p>
-                        </div>
-                        <div class="relative flex items-center">
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-10 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                                <img src="./assets/images/profile1.png" alt="profile1" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-20 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                                <img src="./assets/images/profile2.png" alt="profile2" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-30 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                               <img src="./assets/images/profile3.png" alt="profile3" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="flex justify-center items-center text-base border border-solid border-[3px] border-white bg-[var(--color-text)] rounded-full z-40 w-[2.8rem] h-[2.8rem]">
-                                <span class="text-white">+99</span>
+                                <p>Business wallet</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- content item 3 -->
-                <div class="p-4 border border-dashed border-[#e5e5e5] rounded-[25px]">
-                    <div class="relative">
-                        <img src="./assets/images/thumbnail-gojek.png" alt="thumbnail-gojek">
-                        <div class="absolute flex top-[0.3rem] right-[0.3rem] gap-[0.3rem]">
-                            <img src="./assets/icons/flutter.png" alt="flutter"
-                                class="w-[2rem] h-[2rem]">
-                            <img src="./assets/icons/android-studio.png" alt="android-studio"
-                                class="w-[2rem] h-[2rem]">
-                        </div>
-                    </div>
-                    <div class="p-4 flex justify-between">
+                    <div class="p-4 border border-dashed border-[#e5e5e5] rounded-[25px]">
                         <div>
-                            <h3 class="text-[clamp(1.125rem,5.2vw,1.5rem)]
-                                        md:text-[1.5rem]">Gojek</h3>
-                            <p class="text-[0.875rem]">Home screen gojek apps</p>
+                            <img src="./assets/images/thumbnail-gojek.png" alt="thumbnail-gojek">
                         </div>
-                        <div class="relative flex items-center">
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-10 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                                <img src="./assets/images/profile1.png" alt="profile1" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-20 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                                <img src="./assets/images/profile2.png" alt="profile2" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-30 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                               <img src="./assets/images/profile3.png" alt="profile3" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="flex justify-center items-center text-base border border-solid border-[3px] border-white bg-[var(--color-text)] rounded-full z-40 w-[2.8rem] h-[2.8rem]">
-                                <span class="text-white">+99</span>
+                        <div class="p-4 flex justify-between">
+                            <div>
+                                <h3 class="text-[clamp(1.125rem,6vw,1.5rem)]
+                                        md:text-[1.5rem]">Gojek</h3>
+                                <p>Home screen gojek apps</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- content item 4 -->
-                <div class="hidden p-4 border border-dashed border-[#e5e5e5] rounded-[25px]
+                    <div class="hidden p-4 border border-dashed border-[#e5e5e5] rounded-[25px]
                             md:block">
-                    <div class="relative">
-                        <img src="./assets/images/thumbnail-bookies2.png" alt="thumbnail-bookies2">
-                        <div class="absolute flex top-[0.3rem] right-[0.3rem] gap-[0.3rem]">
-                            <img src="./assets/icons/flutter.png" alt="flutter"
-                                class="w-[2rem] h-[2rem]">
-                            <img src="./assets/icons/tailwind.png" alt="tailwind"
-                                class="w-[2rem] h-[2rem]">
-                        </div>
-                    </div>
-                    <div class="p-4 flex justify-between">
                         <div>
-                            <h3 class="text-[clamp(1.125rem,5.2vw,1.5rem)]
+                            <img src="./assets/images/thumbnail-bookies2.png" alt="thumbnail-bookies2">
+                        </div>
+                        <div class="p-4 flex justify-between">
+                            <div>
+                                <h3 class="text-[clamp(1.125rem,6vw,1.5rem)]
                                         md:text-[1.5rem]">Bookies</h3>
-                            <p class="text-[0.875rem]">Read digital book app</p>
-                        </div>
-                        <div class="relative flex items-center">
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-10 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                                <img src="./assets/images/profile1.png" alt="profile1" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-20 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                                <img src="./assets/images/profile2.png" alt="profile2" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-30 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                               <img src="./assets/images/profile3.png" alt="profile3" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="flex justify-center items-center text-base border border-solid border-[3px] border-white bg-[var(--color-text)] rounded-full z-40 w-[2.8rem] h-[2.8rem]">
-                                <span class="text-white">+99</span>
+                                <p>Read digital book app</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- content item 5 -->
-                <div class="hidden p-4 border border-dashed border-[#e5e5e5] rounded-[25px]
+                    <div class="hidden p-4 border border-dashed border-[#e5e5e5] rounded-[25px]
                             lg:block">
-                    <div class="relative">
-                        <img src="./assets/images/thumbnail-bwalet2.png" alt="thumbnail-bwalet2">
-                        <div class="absolute flex top-[0.3rem] right-[0.3rem] gap-[0.3rem]">
-                            <img src="./assets/icons/bootstrap.png" alt="bootstrap"
-                                class="w-[2rem] h-[2rem]">
-                            <img src="./assets/icons/android-studio.png" alt="android-studio"
-                                class="w-[2rem] h-[2rem]">
-                        </div>
-                    </div>
-                    <div class="p-4 flex justify-between">
                         <div>
-                            <h3 class="text-[clamp(1.125rem,5.2vw,1.5rem)]
+                            <img src="./assets/images/thumbnail-bwalet2.png" alt="thumbnail-bwalet2">
+                        </div>
+                        <div class="p-4 flex justify-between">
+                            <div>
+                                <h3 class="text-[clamp(1.125rem,6vw,1.5rem)]
                                         md:text-[1.5rem]">BWalet</h3>
-                            <p class="text-[0.875rem]">Business wallet</p>
-                        </div>
-                        <div class="relative flex items-center">
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-10 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                                <img src="./assets/images/profile1.png" alt="profile1" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-20 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                                <img src="./assets/images/profile2.png" alt="profile2" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-30 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                               <img src="./assets/images/profile3.png" alt="profile3" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="flex justify-center items-center text-base border border-solid border-[3px] border-white bg-[var(--color-text)] rounded-full z-40 w-[2.8rem] h-[2.8rem]">
-                                <span class="text-white">+99</span>
+                                <p>Business wallet</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- content item 6 -->
-                <div class="hidden p-4 border border-dashed border-[#e5e5e5] rounded-[25px]
+                    <div class="hidden p-4 border border-dashed border-[#e5e5e5] rounded-[25px]
                             lg:block">
-                    <div class="relative">
-                        <img src="./assets/images/thumbnail-gojek2.png" alt="thumbnail-gojek2">
-                        <div class="absolute flex top-[0.3rem] right-[0.3rem] gap-[0.3rem]">
-                            <img src="./assets/icons/flutter.png" alt="flutter"
-                                class="w-[2rem] h-[2rem]">
-                            <img src="./assets/icons/android-studio.png" alt="android-studio"
-                                class="w-[2rem] h-[2rem]">
-                        </div>
-                    </div>
-                    <div class="p-4 flex justify-between">
                         <div>
-                            <h3 class="text-[clamp(1.125rem,5.2vw,1.5rem)]
-                                        md:text-[1.5rem]">Gojek</h3>
-                            <p class="text-[0.875rem]">Home screen gojek apps</p>
+                            <img src="./assets/images/thumbnail-gojek2.png" alt="thumbnail-gojek2">
                         </div>
-                        <div class="relative flex items-center">
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-10 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                                <img src="./assets/images/profile1.png" alt="profile1" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-20 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                                <img src="./assets/images/profile2.png" alt="profile2" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="hidden overflow-hidden border border-solid border-[3px] border-white rounded-full -mr-[1.5rem] z-30 w-[2.8rem] h-[2.8rem]
-                                        md:block">
-                               <img src="./assets/images/profile3.png" alt="profile3" class="w-full h-full object-cover block">
-                            </div>
-                            <div class="flex justify-center items-center text-base border border-solid border-[3px] border-white bg-[var(--color-text)] rounded-full z-40 w-[2.8rem] h-[2.8rem]">
-                                <span class="text-white">+99</span>
+                        <div class="p-4 flex justify-between">
+                            <div>
+                                <h3 class="text-[clamp(1.125rem,6vw,1.5rem)]
+                                        md:text-[1.5rem]">Gojek</h3>
+                                <p>Home screen gojek apps</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <a href="#"
+                    class="self-center px-5 py-2 border border-[var(--color-primary)] rounded-3xl text-[0.9rem] font-light">Load
+                    more</a>
+            </section>
+            <!-- mee------------------------------------------------------------------ -->
+            <section>
+
+                <!-- Hero + Testimonials adapted to model -->
+                <section class=" lg:rounded-[2.7rem]  px-5 py-6 sm:px-7 sm:py-8 lg:px-10 lg:py-10 animate-softFade">
+                    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Left: profile / bio -->
+                        <div class="md:col-span-2 flex flex-col justify-start gap-4">
+                            <h2 class="text-2xl sm:text-3xl ">It’s me Arif Iskandar</h2>
+                            <p class="text-[13px] sm:text-sm text-[var(--text-muted)] leading-relaxed">
+                                I like to code and keep it simple, try something new, and learn more. I think
+                                sharing knowledge is the best practice to improve my skills, and I try to do it.
+                            </p>
+                            <p class="text-[13px] sm:text-sm text-[var(--text-muted)] leading-relaxed">
+                                I am currently the Chief Technology Officer at dEosCity, a startup to help students
+                                prepare for their exams.
+                            </p>
+                        </div>
+
+                        <!-- Right: stacked testimonial cards -->
+                        <div class="col-span-1 space-y-4
+                                    md:col-span-1 space-y-4">
+                            <article class="bg-white rounded-3xl p-4 shadow-soft border border-transparent">
+                                <div class="flex items-start gap-3">
+                                    <img src="./assets/logos/user.png" alt="Adison W"
+                                        class="w-12 h-12 rounded-full object-cover" />
+                                    <div>
+                                        <p class="font-semibold text-sm">Adison Wistevaist</p>
+                                        <p class="text-[11px] text-[var(--text-muted)]">Senior Program Manager etc.</p>
+                                    </div>
+                                </div>
+                                <p class="text-[12px] text-[var(--text-muted)] mt-3 leading-relaxed">
+                                    Heresnert diam ac, morbi tristique egestas sem, commodo ullamcorper ut. Aenean ipsum
+                                    tempus, felis non amet mollis est sem id. Venenatis aliquam tellus viverra mauris.
+                                </p>
+                            </article>
+
+                            <article class="bg-white rounded-3xl p-4 shadow-soft border border-transparent">
+                                <div class="flex items-start gap-3">
+                                    <img src="./assets/logos/user2.png" alt="Adison W2"
+                                        class="w-12 h-12 rounded-full object-cover" />
+                                    <div>
+                                        <p class="font-semibold text-sm">Adison Wistevaist</p>
+                                        <p class="text-[11px] text-[var(--text-muted)]">Senior Program Manager etc.</p>
+                                    </div>
+                                </div>
+                                <p class="text-[12px] text-[var(--text-muted)] mt-3 leading-relaxed">
+                                    Odi perferlis lucbas Nulla in congue adipiscing. Vulputate condimentum ullamcorper
+                                    pellentesque dictumst finibus.
+                                </p>
+                            </article>
+                            <article class="bg-white rounded-3xl p-4 shadow-soft border border-transparent">
+                                <div class="flex items-start gap-3">
+                                    <img src="./assets/logos/user4.png" alt="Adison W2"
+                                        class="w-12 h-12 rounded-full object-cover" />
+                                    <div>
+                                        <p class="font-semibold text-sm">Adison Wistevaist</p>
+                                        <p class="text-[11px] text-[var(--text-muted)]">Senior Program Manager etc.</p>
+                                    </div>
+                                </div>
+                                <p class="text-[12px] text-[var(--text-muted)] mt-3 leading-relaxed">
+                                    Odi perferlis lucbas Nulla in congue adipiscing. Vulputate condimentum ullamcorper
+                                    pellentesque dictumst finibus.
+                                </p>
+                            </article>
+
+                            <article class=" rounded-3xl p-4 shadow-sm border border-transparent">
+                                <div class="flex items-start gap-3">
+                                    <img src="./assets/logos/user3" alt="Adison W3"
+                                        class="w-12 h-12 rounded-full object-cover" />
+                                    <div>
+                                        <p class="font-semibold text-sm">Adison Wistevaist</p>
+                                        <p class="text-[11px] text-[var(--colo-text)]">Senior Program Manager etc.</p>
+                                    </div>
+                                </div>
+                                <p class="text-[12px] text-[var(--colo-text)] mt-3 leading-relaxed">
+                                    Orci praesentibus luctus felis in commodo dapibus, yallam.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+        </main>
+
+        <footer>
+            <div class="mt-8 text-center">
+                <p class="text-sm text-[var(--colo-text)] mb-4">So, what are you waiting for?</p>
+                <button
+                    class="px-6 py-2.5 rounded-full bg-[var(--color-primary)] text-white text-sm font-semibold hover:bg-pink-500 transition-all duration-300">Let's
+                    start</button>
             </div>
-            <a href="#" class="self-center px-5 py-2 border border-[var(--color-primary)] rounded-3xl text-[0.9rem] font-light">Load more</a>
-        </section>
-<!-- mee------------------------------------------------------------------ -->
-    <section>
-
-    </section>
-    </main>
-    <footer>
-
-    </footer>
+        </footer>
+    </div>
 </body>
+
 </html>
