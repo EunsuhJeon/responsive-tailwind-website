@@ -11,6 +11,18 @@ Landing page for an art / app design course built with HTML and Tailwind CSS.
 
 ## Credits
 
-Design based on Figma mockup 
-- Eunsuh Jeon
-- Jose Gabriel Zevallos
+For Forms and Grid, original designs can be found in Figma. 
+
+The original design authors is:
+
+Arif Iskandar: [Belajar Responsive Website Next Js dan Tailwind CSS](figma.com/community/file/1159856835874264727/belajar-responsive-website-next-js-dan-tailwind-css)
+
+## Development Team
+| Name      | Assigned Part           | Key Roles & Features                                                                 |
+|-----------|------------------------|------------------------------------------------------------------------------------|
+| Jade    | Header, Top of Main     | - Recreated mockup layout using **Tailwind only**, no native CSS  
+- Ensured **responsive design** for mobile, tablet, and desktop, adapting to all screen ratios  
+- Applied **Tailwind-based transitions and animations**  
+- Implemented **different element positioning and display behavior** across mobile, tablet, and desktop |
+| Jose    | Bottom of Main, Footer  | -                 |
+
